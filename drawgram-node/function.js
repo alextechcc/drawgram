@@ -1,12 +1,10 @@
-const config     = require('./config.json'),
+const config     = require('./config'),
       Telegraf   = require('telegraf'),
       Extra      = require('telegraf/extra'),
       Markup     = require('telegraf/markup'),
       express    = require('express'),
-      bodyParser = require('body-parser'),
       base64url  = require('base64-url')
       aes256     = require('aes256'),
-      fs         = require('fs'),
       cors       = require('cors'),
       Busboy     = require('busboy');
 

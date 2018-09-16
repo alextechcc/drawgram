@@ -9,7 +9,6 @@
   "dependencies": {
     "aes256": "*",
     "base64-url": "*",
-    "body-parser": "*",
     "busboy": "^0.2.14",
     "cors": "*",
     "express": "*",
