@@ -3,7 +3,7 @@ A Telegram bot to draw small doodles and send them to people in the Telegram mes
 
 _(hosted on google cloud functions & bucket under @drawgramapp on Telegram)_
 
-![Telegram Bot](https://github.com/AklemTech/drawgram/raw/master/pictures/drawgram.png)
+![Telegram Bot](https://github.com/alextechcc/drawgram/raw/master/pictures/drawgram.png)
 
 This Telegram bot requires no state or storage, and relies on Telegram image caching, and storing state in messages and buttons.
 
