@@ -32,25 +32,25 @@ function submitButton() {
 
 function submit(imgBlob) {
     console.log("Submitting");
-    var formData = new FormData();
+    let formData = new FormData();
 
     formData.append('salt', TelegramGameProxy.initParams['salt']);
     formData.append('payload', TelegramGameProxy.initParams['payload']);
     formData.append('drawing', imgBlob);
 
-    fetch(url, {
-        method: 'POST',
-        body: formData,
-        mode: 'cors'
-    }).then(res => {
-        if (res.ok) {
-            console.log("Request complete!", res);
+    let XHR = new XMLHttpRequest();
+    XHR.addEventListener('load', event => {
+        if (event.target.status === 202) {
+            console.log("Request complete!");
             document.getElementById('submitted').style.visibility = 'visible';
             detachListeners();
         }
-    }).catch(err => {
-        console.log(err);
     });
+    XHR.addEventListener('error', event => {
+        console.log("Status: " + event.target.status);
+    });
+    XHR.open('POST', url);
+    XHR.send(formData);
 }
 
 function attachListeners() {
