@@ -1,0 +1,18 @@
+{
+  "name": "DrawGram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "function.js",
+  "scripts": {},
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "aes256": "*",
+    "base64-url": "*",
+    "body-parser": "*",
+    "busboy": "^0.2.14",
+    "cors": "*",
+    "express": "*",
+    "telegraf": "*"
+  }
+}
